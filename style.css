@@ -33,23 +33,120 @@ body{
     font-size: 1rem;
     font-weight: 500;
 }
-.container .btn{
+.btn{
  padding: 12px 16px;
  background-image: linear-gradient(to right,rgba(157, 255, 0, 0.918) ,rgba(247, 0, 255, 0.87),rgb(98, 0, 255));
- border-radius: 1000px;
+ border-radius: 10000px;
  border: none;
  color: #FFFFFF;
  font-size: 1rem;
  font-weight: 600;
  cursor: pointer;
 }
+header hr{
+    margin-top: 30px;
+    opacity: 0.1;
+}
+.banner-section{
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 90px; 
+   
+}
+.img-box{
+    position: relative;
+    width: 350px;
+    margin: auto;
+}
+.img-box .hero{
+    width: 100%;
+}
+.img-box .zero{
+    position: absolute;
+    left: 115px;
+    top: 100px;
+}
+.img-box .drup{
+    background-color: #00ff88c2;
+    color: #1A0B2E;
+    font-size: 1.12rem;
+    font-weight: 600;
+    border-radius: 8px;
+    width: 50px;
+    height: 22px;
+    border: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.banner-container h2{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+.banner-container p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.transprant-btn{
+    padding: 12px 20px;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10000px;
+    margin-bottom: 100px;
+}
+/* end */
 
+.pocdcast-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pocdcast-container h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.pocdcast-container .pocdcast-p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.pocdcast-container hr{
+    opacity: 0.1;
+}
+.card{
+    display: flex;
+   justify-content: space-between;
+    gap: 80px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.card h1{
+    font-size: 3rem;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+.card p{
+    font-size: 1rem;
+    color: #FFFFFF;
 
-
-
-
-
-
+}
 
 
 
@@ -66,8 +163,9 @@ body{
 
 
 @media screen and (max-width: 576px) {
-body{
-    padding: 0 10px;
+
+.container{
+    padding-top: 20px;
 }
     .container ul {
     display: none;
@@ -77,5 +175,38 @@ body{
 }
 .container .last {
     display: inline;
+}
+
+.banner-container {
+    padding-top: 50px;
+}
+.img-box {
+width: 200px;
+}
+.img-box .zero {
+    left: 60px;
+    top: 40px;
+    width: 80px;
+}
+.img-box .drup {
+    top: 11px;
+    right: 2px;
+}
+
+
+
+/* end */
+.pocdcast-container {
+    padding: 20px;
+}
+.pocdcast-container .pocdcast-p {
+    margin-bottom: 40px;
+}
+.card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 }
