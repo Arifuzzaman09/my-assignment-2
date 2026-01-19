@@ -135,7 +135,7 @@ header hr{
    justify-content: space-between;
     gap: 80px;
     margin-top: 80px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 .card h1{
     font-size: 3rem;
@@ -145,12 +145,73 @@ header hr{
 .card p{
     font-size: 1rem;
     color: #FFFFFF;
-
 }
-
-
-
-
+.techwave-main-container{
+    background-color: #4f3177;
+}
+.techwave-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.techwave-container h1{
+    font-size: 3rrem;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-top: 120px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    padding-bottom: 120px;
+}
+.card-container .card-2{
+     padding: 100px 40px;
+     background-color: #48217a;
+     border-radius: 40px;
+}
+.card-container .card-1{
+     padding:  40px;
+     background-color: #48217a;
+     border-radius: 40px;
+    }
+.card-2>h4{
+    margin: 16px auto;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-2>p{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.card-1>h4{
+    margin: 16px auto;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-1>p{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.box-1{
+    grid-row: span 2;
+    grid-column: span 1;
+}
+.box-2{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box-3{
+    grid-column: span 2;
+}
+.box-4{
+    grid-column: span 2;
+}
 
 
 
@@ -176,7 +237,6 @@ header hr{
 .container .last {
     display: inline;
 }
-
 .banner-container {
     padding-top: 50px;
 }
@@ -209,4 +269,22 @@ width: 200px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.techwave-container h1 {
+    padding-top: 50px;
+}
+.card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding-bottom: 50px;
+}
+.card-container .card-2 {
+    padding:  24px;
+}
+.box-1 {
+    grid-row: span 1;
+}
+.card-container .card-1 {
+   padding: 24px;
+}
+
 }
